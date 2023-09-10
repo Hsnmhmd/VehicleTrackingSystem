@@ -11,7 +11,7 @@ The Image Shows The Layered Arch of the system.
 In this phase the UART1 and Uart2 are intialized to Work with DMA CH 0, 1, 2 To provide the required interfacing for SIM800 and
 GPS neo-6m. Further more all the Freertos Tasks,Semaphores and timers are creathed in this phase. Finaly Starting The Scheduler.
 ### 2.Operation
-Once the system is initialized, the DMA Ch 8 starts transferring the GPS data received at UART1 to a buffer in the SRAM to be parsed to extract the required information from the GPRMS frame. The Parsed data is then used to set the rate Upon which the SIM900 Sends the longitude and the latitude to be drawn on a Google map USING Google Locker Studio. The AT Commands and Responses are sent and received using UART2. Transferring the data between SRAM and UART2 is done using DMA Ch 0,1.
+Once the system is initialized, the DMA Ch 8 starts transferring the GPS data received at UART1 to a buffer in the SRAM to be parsed to extract the required information from the GPRMS frame. The Parsed data is then used to set the rate Upon which the SIM800 Sends the longitude and the latitude to be drawn on a Google map USING Google Locker Studio. The AT Commands and Responses are sent and received using UART2. Transferring the data between SRAM and UART2 is done using DMA Ch 0,1.
 ![Alt text](https://github.com/Hsnmhmd/VehicleTrackingSystem/blob/main/DataFlowBetweenModules.png)
 
 ## Further Info
